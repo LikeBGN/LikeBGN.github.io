@@ -284,6 +284,12 @@ strong {
   border: 1px solid var(--line);
 }
 
+.profile-details {
+  width: fit-content;
+  max-width: 100%;
+  text-align: center;
+}
+
 .profile h1 {
   font-size: 29px;
   line-height: 1.25;
@@ -307,6 +313,7 @@ strong {
 .contact-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
