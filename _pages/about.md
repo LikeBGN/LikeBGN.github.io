@@ -2,7 +2,7 @@
 layout: academic-home
 title: "Boyong Zhao"
 permalink: /
-description: "Research in robotics, cross-embodiment generalization, visual perception, and SLAM."
+description: "Research in cross-embodiment generalization and humanoid robot manipulation."
 redirect_from:
   - /about/
   - /about.html

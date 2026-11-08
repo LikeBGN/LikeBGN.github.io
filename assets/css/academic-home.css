@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora-variable.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --background: #ffffff;
@@ -57,7 +65,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Lora", Georgia, "Songti SC", "SimSun", serif;
   font-size: 15px;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -290,6 +298,18 @@ strong {
   margin-bottom: 15px;
 }
 
+.profile-lab {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-lab sup,
+.about-section sup,
+.entry-institution sup {
+  font-size: 0.7em;
+}
+
 .affiliation {
   font-size: 13.5px;
   line-height: 1.65;
@@ -413,10 +433,6 @@ strong {
   font-weight: 650;
   letter-spacing: 0.45px;
   text-transform: uppercase;
-}
-
-.publication-venue span {
-  margin: 0 5px;
 }
 
 .publication-details h3 {
@@ -595,67 +611,6 @@ strong {
 
 .entry-institution {
   color: var(--text);
-}
-
-.experience-item .entry-advisor {
-  color: var(--muted);
-  font-size: 12.5px;
-  margin-bottom: 7px;
-}
-
-.experience-item > p:last-child {
-  color: var(--muted);
-}
-
-.education-entry .education-details {
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.education-details span {
-  margin: 0 8px;
-}
-
-.technical-skills {
-  margin-top: 22px;
-  margin-bottom: 0;
-  font-size: 12.5px;
-  color: var(--muted);
-}
-
-.technical-skills strong {
-  color: var(--text);
-  margin-right: 10px;
-}
-
-.honors-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.honors-list li {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 10px;
-  font-size: 13.5px;
-}
-
-.honors-list li:last-child {
-  margin-bottom: 0;
-}
-
-.honors-list time, .honor-year {
-  white-space: nowrap;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.honor-detail {
-  color: var(--muted);
 }
 
 .site-footer {
@@ -971,34 +926,6 @@ strong {
     font-size: 13px;
   }
 
-  .experience-item .entry-advisor {
-    font-size: 12px;
-  }
-
-  .technical-skills {
-    font-size: 12px;
-    line-height: 1.9;
-  }
-
-  .technical-skills strong {
-    display: block;
-  }
-
-  .honors-list li {
-    font-size: 12.5px;
-    gap: 14px;
-    margin-bottom: 12px;
-  }
-
-  .honors-list time, .honor-year {
-    font-size: 11px;
-  }
-
-  .honor-detail {
-    display: block;
-    font-size: 12px;
-  }
-
   .site-footer {
     padding-bottom: 24px;
     font-size: 10px;
@@ -1083,7 +1010,7 @@ strong {
     margin-bottom: 25px;
   }
 
-  .publication-card, .experience-item, .education-entry, .honors-list li {
+  .publication-card, .experience-item, .education-entry {
     break-inside: avoid;
   }
 

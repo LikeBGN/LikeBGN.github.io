@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <meta name="description" content="Boyong Zhao's academic homepage. Research in robotics, cross-embodiment generalization, visual perception, and SLAM.">
-    <title>Boyong Zhao | Robotics &amp; Visual Perception</title>
+    <meta name="description" content="Boyong Zhao's academic homepage. Research in cross-embodiment generalization and humanoid robot manipulation.">
+    <title>Boyong Zhao | Embodiment Intelligence</title>
     <link rel="canonical" href="{{ '/' | absolute_url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Boyong Zhao | Robotics &amp; Visual Perception">
-    <meta property="og:description" content="Research in robotics, cross-embodiment generalization, visual perception, and SLAM.">
+    <meta property="og:title" content="Boyong Zhao | Embodiment Intelligence">
+    <meta property="og:description" content="Research in cross-embodiment generalization and humanoid robot manipulation.">
     <meta property="og:url" content="{{ '/' | absolute_url }}">
     <meta property="og:image" content="{{ '/images/avatar.png' | absolute_url }}">
     <script>
@@ -20,6 +20,7 @@
         }
       } catch (error) {}
     </script>
+    <link rel="preload" href="{{ '/assets/fonts/lora-variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}">
     <script src="{{ '/assets/js/academic-home.js' | relative_url }}" defer></script>
   </head>
@@ -40,7 +41,6 @@
           <a href="#publications">Publications</a>
           <a href="#research">Research</a>
           <a href="#education">Education</a>
-          <a href="#honors">Honors</a>
         </nav>
         <button class="theme-toggle" type="button" aria-label="Switch color theme" hidden>
           <svg class="icon theme-icon-light" aria-hidden="true"><use href="#icon-sun"></use></svg>
@@ -54,7 +54,8 @@
         <img class="avatar" src="{{ '/images/avatar.png' | relative_url }}" width="184" height="184" alt="Portrait of Boyong Zhao">
         <div class="profile-details">
           <h1>Boyong Zhao</h1>
-          <p class="profile-focus">Robotics &amp; Visual Perception</p>
+          <p class="profile-focus">Embodiment Intelligence</p>
+          <p class="profile-lab"><a href="https://guodaqiang.com/" target="_blank" rel="noopener noreferrer" title="Intelligent and Responsible Manufacturing Systems Lab">I<sup>R</sup>MS Lab</a></p>
           <p class="affiliation">The Hong Kong University of<br class="desktop-break"> Science and Technology<br class="desktop-break"> (Guangzhou)</p>
           <div class="contact-links">
             <a class="email-link" href="mailto:zby_18223511409@163.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg><span>zby_18223511409@163.com</span></a>
@@ -63,10 +64,8 @@
           <div class="interests">
             <h2>Research interests</h2>
             <ul>
-              <li>Robotics</li>
-              <li>Cross-embodiment generalization</li>
-              <li>Visual perception</li>
-              <li>SLAM</li>
+              <li>Cross-Embodiment Generalization</li>
+              <li>Humanoid Robot Manipulation</li>
             </ul>
           </div>
         </div>
@@ -75,8 +74,8 @@
       <main id="main-content" class="main-content">
         <section id="about" class="content-section about-section" aria-labelledby="about-heading">
           <h2 id="about-heading">About</h2>
-          <p>I am currently conducting research on <strong>cross-embodiment generalization</strong> at The Hong Kong University of Science and Technology (Guangzhou). My research interests span robotics, visual perception, and SLAM.</p>
-          <p>I received my B.Eng. in Automation from Harbin Institute of Technology, Shenzhen, in July 2025. From June 2025 to May 2026, I worked on underwater visual perception at LIAS, The Chinese University of Hong Kong, Shenzhen, advised by Prof. Junfeng Wu.</p>
+          <p>I am currently conducting research at the <a href="https://guodaqiang.com/" target="_blank" rel="noopener noreferrer" title="Intelligent and Responsible Manufacturing Systems Lab">I<sup>R</sup>MS Lab</a>, The Hong Kong University of Science and Technology (Guangzhou). My research interests focus on <strong>cross-embodiment generalization</strong> and <strong>humanoid robot manipulation</strong>.</p>
+          <p>I received my B.Eng. in Automation from Harbin Institute of Technology, Shenzhen, in July 2025. From June 2025 to May 2026, I worked on underwater visual perception at <a href="https://lias-cuhksz.github.io/" target="_blank" rel="noopener noreferrer">LIAS</a>, The Chinese University of Hong Kong, Shenzhen, advised by Prof. Junfeng Wu.</p>
         </section>
 
         <section id="publications" class="content-section" aria-labelledby="publications-heading">
@@ -86,7 +85,7 @@
               <img src="{{ '/images/aquapoint-overview.png' | relative_url }}" width="700" height="465" alt="Overview of the AquaPoint framework for underwater local feature learning" loading="lazy">
             </a>
             <div class="publication-details">
-              <p class="publication-venue">IROS 2026 <span aria-hidden="true">·</span> Accepted</p>
+              <p class="publication-venue">IROS 2026</p>
               <h3><a href="{{ '/files/AquaPoint.pdf' | relative_url }}">AquaPoint: Self-Supervised Cross-Domain Framework for Robust Underwater Local Features</a></h3>
               <p class="publication-authors"><strong>Boyong Zhao</strong>, Yuan Shen, Pui Yi Chui, Yuzhe Li, Junfeng Wu</p>
               <p class="publication-summary">Self-supervised learning of robust local features for underwater visual perception and odometry.</p>
@@ -103,8 +102,7 @@
   title = {AquaPoint: Self-Supervised Cross-Domain Framework for Robust Underwater Local Features},
   author = {Zhao, Boyong and Shen, Yuan and Chui, Pui Yi and Li, Yuzhe and Wu, Junfeng},
   booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
-  year = {2026},
-  note = {Accepted}
+  year = {2026}
 }</code></pre>
                 <div class="copy-controls">
                   <button class="copy-citation" type="button" hidden>Copy citation</button>
@@ -120,26 +118,15 @@
           <div class="experience-list">
             <article class="experience-item">
               <div class="entry-heading"><h3>Cross-Embodiment Generalization</h3><span class="entry-date">Oct 2026 — Present</span></div>
-              <p class="entry-institution">The Hong Kong University of Science and Technology (Guangzhou)</p>
-              <p>Conducting research on cross-embodiment generalization in robotics.</p>
+              <p class="entry-institution"><a href="https://guodaqiang.com/" target="_blank" rel="noopener noreferrer" title="Intelligent and Responsible Manufacturing Systems Lab">I<sup>R</sup>MS Lab</a> · The Hong Kong University of Science and Technology (Guangzhou)</p>
             </article>
             <article class="experience-item">
               <div class="entry-heading"><h3>Underwater Visual Perception</h3><span class="entry-date">Jun 2025 — May 2026</span></div>
-              <p class="entry-institution">LIAS · The Chinese University of Hong Kong, Shenzhen</p>
-              <p class="entry-advisor">Advisor — Prof. Junfeng Wu</p>
-              <p>Developed robust underwater local features with PGDB and GCDA, and evaluated feature matching and visual odometry using LightGlue and ORB-SLAM3.</p>
+              <p class="entry-institution"><a href="https://lias-cuhksz.github.io/" target="_blank" rel="noopener noreferrer">LIAS</a> · The Chinese University of Hong Kong, Shenzhen</p>
             </article>
             <article class="experience-item">
               <div class="entry-heading"><h3>Vision-Language Models for Autonomous Driving</h3><span class="entry-date">Sep 2024 — Jan 2025</span></div>
-              <p class="entry-institution">ClassLab · Harbin Institute of Technology, Shenzhen</p>
-              <p class="entry-advisor">Advisor — Prof. Liang Hu</p>
-              <p>Fine-tuned LLaVA for long-tail perception in autonomous driving.</p>
-            </article>
-            <article class="experience-item">
-              <div class="entry-heading"><h3>Reinforcement Learning</h3><span class="entry-date">Jul 2023 — Sep 2023</span></div>
-              <p class="entry-institution">RLGroup · Harbin Institute of Technology, Shenzhen</p>
-              <p class="entry-advisor">Advisor — Yanjie Li</p>
-              <p>Implemented Q-learning and Deep Q-Networks (DQN) in simulation.</p>
+              <p class="entry-institution"><a href="https://github.com/liang-hu" target="_blank" rel="noopener noreferrer" title="Control and Learning for Autonomous SystemS Lab">CLASS Lab</a> · Harbin Institute of Technology, Shenzhen</p>
             </article>
           </div>
         </section>
@@ -149,20 +136,7 @@
           <article class="education-entry">
             <div class="entry-heading"><h3>Harbin Institute of Technology, Shenzhen</h3><span class="entry-date">Sep 2021 — Jul 2025</span></div>
             <p class="entry-institution">B.Eng. in Automation</p>
-            <p class="education-details">GPA 89/100 <span aria-hidden="true">·</span> Rank 26/255</p>
           </article>
-          <p class="technical-skills"><strong>Technical skills</strong> C/C++, Python, MATLAB, LaTeX, Linux, ROS</p>
-        </section>
-
-        <section id="honors" class="content-section" aria-labelledby="honors-heading">
-          <h2 id="honors-heading">Honors &amp; Awards</h2>
-          <ul class="honors-list">
-            <li><span>Elite Research Assistant <span class="honor-detail">— School of Data Science, CUHK-Shenzhen</span></span><time datetime="2026">2026</time></li>
-            <li><span>Second-Class Academic Scholarship</span><span class="honor-year">2022, 2023</span></li>
-            <li><span>Third-Class Academic Scholarship</span><time datetime="2024">2024</time></li>
-            <li><span>Outstanding Student</span><time datetime="2023">2023</time></li>
-            <li><span>Third Prize, National College Mathematical Modeling Competition</span><time datetime="2022-09">Sep 2022</time></li>
-          </ul>
         </section>
 
         <footer class="site-footer">
