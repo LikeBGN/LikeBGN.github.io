@@ -292,19 +292,6 @@ strong {
   margin-bottom: 8px;
 }
 
-.profile-focus {
-  font-size: 13.5px;
-  color: var(--accent);
-  margin-bottom: 15px;
-}
-
-.profile-lab {
-  margin-bottom: 8px;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.profile-lab sup,
 .about-section sup,
 .entry-institution sup {
   font-size: 0.7em;
@@ -318,18 +305,19 @@ strong {
 }
 
 .contact-links {
-  display: grid;
-  gap: 9px;
-}
-
-.contact-links a {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--text);
-  font-size: 13px;
-  width: fit-content;
-  max-width: 100%;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--muted);
+  border-radius: 4px;
 }
 
 .contact-links a:hover {
@@ -337,34 +325,8 @@ strong {
 }
 
 .contact-links .icon {
-  color: var(--muted);
-  width: 16px;
-  height: 16px;
-}
-
-.email-link span {
-  overflow-wrap: anywhere;
-}
-
-.interests {
-  border-top: 1px solid var(--line);
-  margin-top: 27px;
-  padding-top: 20px;
-}
-
-.interests h2 {
-  margin-bottom: 8px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.interests ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.9;
+  width: 20px;
+  height: 20px;
 }
 
 .main-content {
@@ -775,44 +737,8 @@ strong {
     font-size: 27px;
   }
 
-  .profile-focus {
-    margin-bottom: 8px;
-  }
-
   .affiliation {
     margin-bottom: 13px;
-  }
-
-  .desktop-break {
-    display: none;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 20px;
-  }
-
-  .contact-links .email-link {
-    flex-basis: 100%;
-  }
-
-  .interests {
-    border: 0;
-    margin-top: 16px;
-    padding-top: 0;
-  }
-
-  .interests h2 {
-    margin-bottom: 4px;
-  }
-
-  .interests ul {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 14px;
-    row-gap: 0;
-    font-size: 12px;
   }
 
   .publication-card {
@@ -863,38 +789,8 @@ strong {
     margin-bottom: 5px;
   }
 
-  .profile-focus {
-    font-size: 12px;
-  }
-
   .affiliation {
     font-size: 12px;
-  }
-
-  .contact-links {
-    gap: 8px 16px;
-  }
-
-  .contact-links a {
-    font-size: 12px;
-    gap: 7px;
-  }
-
-  .contact-links .email-link {
-    font-size: 11px;
-  }
-
-  .interests {
-    margin-top: 15px;
-  }
-
-  .interests h2 {
-    font-size: 12px;
-  }
-
-  .interests ul {
-    font-size: 11.5px;
-    line-height: 1.8;
   }
 
   .content-section > h2 {
@@ -1022,14 +918,6 @@ strong {
 
   .profile h1 {
     font-size: 24px;
-  }
-
-  .interests {
-    margin-top: 20px;
-  }
-
-  .interests ul {
-    display: block;
   }
 
   .publication-card {
