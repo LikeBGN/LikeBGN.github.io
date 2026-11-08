@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Boyong Zhao's academic homepage. Research in robotics, cross-embodiment generalization, visual perception, and SLAM.">
+    <title>Boyong Zhao | Robotics &amp; Visual Perception</title>
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Boyong Zhao | Robotics &amp; Visual Perception">
+    <meta property="og:description" content="Research in robotics, cross-embodiment generalization, visual perception, and SLAM.">
+    <meta property="og:url" content="{{ '/' | absolute_url }}">
+    <meta property="og:image" content="{{ '/images/avatar.png' | absolute_url }}">
+    <script>
+      try {
+        var savedTheme = localStorage.getItem('academic-home-theme');
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch (error) {}
+    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}">
+    <script src="{{ '/assets/js/academic-home.js' | relative_url }}" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2-6-2.5M15 22v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.3 1.2a11.4 11.4 0 0 0-6 0C6.7 3.6 5.7 3.9 5.7 3.9a4.3 4.3 0 0 0-.1 3.2 4.7 4.7 0 0 0-1.3 3.3c0 4.7 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.2V22"/></symbol>
+      <symbol id="icon-document" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/></symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.8 13.1A9 9 0 0 1 10.9 3.2a9 9 0 1 0 9.9 9.9Z"/></symbol>
+    </svg>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-name" href="#about">Boyong Zhao<span class="name-dot" aria-hidden="true">.</span></a>
+        <nav class="section-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#research">Research</a>
+          <a href="#education">Education</a>
+          <a href="#honors">Honors</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" hidden>
+          <svg class="icon theme-icon-light" aria-hidden="true"><use href="#icon-sun"></use></svg>
+          <svg class="icon theme-icon-dark" aria-hidden="true"><use href="#icon-moon"></use></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="page-shell">
+      <aside class="profile" aria-label="Profile and contact">
+        <img class="avatar" src="{{ '/images/avatar.png' | relative_url }}" width="184" height="184" alt="Portrait of Boyong Zhao">
+        <div class="profile-details">
+          <h1>Boyong Zhao</h1>
+          <p class="profile-focus">Robotics &amp; Visual Perception</p>
+          <p class="affiliation">The Hong Kong University of<br class="desktop-break"> Science and Technology<br class="desktop-break"> (Guangzhou)</p>
+          <div class="contact-links">
+            <a class="email-link" href="mailto:zby_18223511409@163.com"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg><span>zby_18223511409@163.com</span></a>
+            <a href="https://github.com/LikeBGN"><svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg><span>GitHub</span></a>
+            <a href="{{ '/files/CV.pdf' | relative_url }}" aria-label="Curriculum Vitae, August 2026"><svg class="icon" aria-hidden="true"><use href="#icon-document"></use></svg><span>CV · Aug 2026</span></a>
+          </div>
+          <div class="interests">
+            <h2>Research interests</h2>
+            <ul>
+              <li>Robotics</li>
+              <li>Cross-embodiment generalization</li>
+              <li>Visual perception</li>
+              <li>SLAM</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main-content" class="main-content">
+        <section id="about" class="content-section about-section" aria-labelledby="about-heading">
+          <h2 id="about-heading">About</h2>
+          <p>I am currently conducting research on <strong>cross-embodiment generalization</strong> at The Hong Kong University of Science and Technology (Guangzhou). My research interests span robotics, visual perception, and SLAM.</p>
+          <p>I received my B.Eng. in Automation from Harbin Institute of Technology, Shenzhen, in July 2025. From June 2025 to May 2026, I worked on underwater visual perception at LIAS, The Chinese University of Hong Kong, Shenzhen, advised by Prof. Junfeng Wu.</p>
+        </section>
+
+        <section id="news" class="content-section news-section" aria-labelledby="news-heading">
+          <h2 id="news-heading">News</h2>
+          <div class="news-item">
+            <time datetime="2026-10">Oct 2026</time>
+            <p>I started research on cross-embodiment generalization at HKUST (Guangzhou).</p>
+          </div>
+        </section>
+
+        <section id="publications" class="content-section" aria-labelledby="publications-heading">
+          <h2 id="publications-heading">Publications</h2>
+          <article class="publication-card">
+            <a class="publication-image" href="{{ '/files/AquaPoint.pdf' | relative_url }}" aria-label="Read the AquaPoint paper">
+              <img src="{{ '/images/aquapoint-overview.png' | relative_url }}" width="700" height="465" alt="Overview of the AquaPoint framework for underwater local feature learning" loading="lazy">
+            </a>
+            <div class="publication-details">
+              <p class="publication-venue">IROS 2026 <span aria-hidden="true">·</span> Accepted</p>
+              <h3><a href="{{ '/files/AquaPoint.pdf' | relative_url }}">AquaPoint: Self-Supervised Cross-Domain Framework for Robust Underwater Local Features</a></h3>
+              <p class="publication-authors"><strong>Boyong Zhao</strong>, Yuan Shen, Pui Yi Chui, Yuzhe Li, Junfeng Wu</p>
+              <p class="publication-summary">Self-supervised learning of robust local features for underwater visual perception and odometry.</p>
+              <div class="publication-links">
+                <a href="{{ '/files/AquaPoint.pdf' | relative_url }}">PDF</a>
+                <a href="https://github.com/LikeBGN/AquaPoint">Code</a>
+                <a href="#aquapoint-bibtex" class="bibtex-link" aria-controls="aquapoint-bibtex">BibTeX</a>
+              </div>
+            </div>
+            <details id="aquapoint-bibtex" class="bibtex">
+              <summary>BibTeX citation</summary>
+              <div class="bibtex-content">
+                <pre><code id="aquapoint-citation">@inproceedings{zhao2026aquapoint,
+  title = {AquaPoint: Self-Supervised Cross-Domain Framework for Robust Underwater Local Features},
+  author = {Zhao, Boyong and Shen, Yuan and Chui, Pui Yi and Li, Yuzhe and Wu, Junfeng},
+  booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year = {2026},
+  note = {Accepted}
+}</code></pre>
+                <div class="copy-controls">
+                  <button class="copy-citation" type="button" hidden>Copy citation</button>
+                  <span class="copy-status" role="status" aria-live="polite"></span>
+                </div>
+              </div>
+            </details>
+          </article>
+        </section>
+
+        <section id="research" class="content-section" aria-labelledby="research-heading">
+          <h2 id="research-heading">Research Experience</h2>
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="entry-heading"><h3>Cross-Embodiment Generalization</h3><span class="entry-date">Oct 2026 — Present</span></div>
+              <p class="entry-institution">The Hong Kong University of Science and Technology (Guangzhou)</p>
+              <p>Conducting research on cross-embodiment generalization in robotics.</p>
+            </article>
+            <article class="experience-item">
+              <div class="entry-heading"><h3>Underwater Visual Perception</h3><span class="entry-date">Jun 2025 — May 2026</span></div>
+              <p class="entry-institution">LIAS · The Chinese University of Hong Kong, Shenzhen</p>
+              <p class="entry-advisor">Advisor — Prof. Junfeng Wu</p>
+              <p>Developed robust underwater local features with PGDB and GCDA, and evaluated feature matching and visual odometry using LightGlue and ORB-SLAM3.</p>
+            </article>
+            <article class="experience-item">
+              <div class="entry-heading"><h3>Vision-Language Models for Autonomous Driving</h3><span class="entry-date">Sep 2024 — Jan 2025</span></div>
+              <p class="entry-institution">ClassLab · Harbin Institute of Technology, Shenzhen</p>
+              <p class="entry-advisor">Advisor — Prof. Liang Hu</p>
+              <p>Fine-tuned LLaVA for long-tail perception in autonomous driving.</p>
+            </article>
+            <article class="experience-item">
+              <div class="entry-heading"><h3>Reinforcement Learning</h3><span class="entry-date">Jul 2023 — Sep 2023</span></div>
+              <p class="entry-institution">RLGroup · Harbin Institute of Technology, Shenzhen</p>
+              <p class="entry-advisor">Advisor — Yanjie Li</p>
+              <p>Implemented Q-learning and Deep Q-Networks (DQN) in simulation.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="education" class="content-section" aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+          <article class="education-entry">
+            <div class="entry-heading"><h3>Harbin Institute of Technology, Shenzhen</h3><span class="entry-date">Sep 2021 — Jul 2025</span></div>
+            <p class="entry-institution">B.Eng. in Automation</p>
+            <p class="education-details">GPA 89/100 <span aria-hidden="true">·</span> Rank 26/255</p>
+          </article>
+          <p class="technical-skills"><strong>Technical skills</strong> C/C++, Python, MATLAB, LaTeX, Linux, ROS</p>
+        </section>
+
+        <section id="honors" class="content-section" aria-labelledby="honors-heading">
+          <h2 id="honors-heading">Honors &amp; Awards</h2>
+          <ul class="honors-list">
+            <li><span>Elite Research Assistant <span class="honor-detail">— School of Data Science, CUHK-Shenzhen</span></span><time datetime="2026">2026</time></li>
+            <li><span>Second-Class Academic Scholarship</span><span class="honor-year">2022, 2023</span></li>
+            <li><span>Third-Class Academic Scholarship</span><time datetime="2024">2024</time></li>
+            <li><span>Outstanding Student</span><time datetime="2023">2023</time></li>
+            <li><span>Third Prize, National College Mathematical Modeling Competition</span><time datetime="2022-09">Sep 2022</time></li>
+          </ul>
+        </section>
+
+        <footer class="site-footer">
+          <p>© {{ 'now' | date: '%Y' }} Boyong Zhao</p>
+          <p>Built with <a href="https://jekyllrb.com/">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a></p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
