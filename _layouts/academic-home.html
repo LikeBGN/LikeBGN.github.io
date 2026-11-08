@@ -21,8 +21,8 @@
       } catch (error) {}
     </script>
     <link rel="preload" href="{{ '/assets/fonts/lora-variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}">
-    <script src="{{ '/assets/js/academic-home.js' | relative_url }}" defer></script>
+    <link rel="stylesheet" href="{{ '/assets/css/academic-home.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    <script src="{{ '/assets/js/academic-home.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
