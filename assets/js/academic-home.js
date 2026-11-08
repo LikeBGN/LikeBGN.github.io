@@ -103,4 +103,21 @@
       copyStatus.textContent = "Citation selected. Press Ctrl+C or ⌘C to copy.";
     }
   });
+
+  const visitorMap = document.querySelector(".visitor-map");
+
+  function fitVisitorMap() {
+    const widget = visitorMap.querySelector("#mapmyvisitors-widget");
+    if (!widget || !widget.offsetWidth) return;
+    const scale = Math.min(1, visitorMap.clientWidth / widget.offsetWidth);
+    widget.style.transform = `translateX(-50%) scale(${scale})`;
+    visitorMap.style.height = `${widget.offsetHeight * scale}px`;
+  }
+
+  new ResizeObserver(fitVisitorMap).observe(visitorMap);
+  new MutationObserver(fitVisitorMap).observe(visitorMap, {
+    childList: true,
+    subtree: true,
+  });
+  fitVisitorMap();
 })();
